@@ -10,3 +10,9 @@ Listagem completa de todas as libraries utilizadas.
 MaskImage::MaskImage('path/to/file.jpg');
 
 ````
+
+* Snippets Aton - varios recursos prontos para uso Yii2 e doctype
+````
+// inserir no C:\Users\Usuario\.atom
+snippets.cson
+````

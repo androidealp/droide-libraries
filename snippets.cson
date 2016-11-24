@@ -60,6 +60,11 @@
      * @return ${8:tipo} - ${9:desc}
      */
     '''
+  'yii module adm get params':
+      'prefix': 'yiimoduleparams'
+      'body': '''
+      \\\\\Yii::$app->getModule('_adm')->params['logo']
+      '''
   'yii identity user':
       'prefix': 'yiiuser'
       'body': '''
@@ -69,6 +74,11 @@
       'prefix': 'yiiformat'
       'body': '''
         \\\\\Yii::$app->response->format = \\\\\yii\\\\\web\\\\\Response::FORMAT_JSON;
+      '''
+  'yii translate':
+      'prefix': 'yiitranslate'
+      'body': '''
+        \\\\\Yii::t('site', 'Sair {user}!');
       '''
   'yii logs':
       'prefix': 'yiilog'

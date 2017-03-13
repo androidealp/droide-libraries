@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+    \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
+]]></content>
+	 <tabTrigger>yiiformat</tabTrigger>
+    <scope>source.php</scope>
+    <description>define um formato no action de retorno.</description>
+</snippet>

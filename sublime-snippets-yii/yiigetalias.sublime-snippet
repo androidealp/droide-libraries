@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \Yii::getAlias('@webroot');
+
+]]></content>
+	 <tabTrigger>yiigetalias</tabTrigger>
+    <scope>source.php</scope>
+    <description>pega ou cria uma url dinamica com base na url alias informada.</description>
+</snippet>

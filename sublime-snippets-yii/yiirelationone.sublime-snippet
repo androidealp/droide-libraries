@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    return $this->hasOne(\app\models\${1:Model}::className(), ['${2:id}' => '${3:id}']);
+
+]]></content>
+	 <tabTrigger>yiirelationone</tabTrigger>
+    <scope>source.php</scope>
+    <description>Cria uma relação no model entre models.</description>
+</snippet>

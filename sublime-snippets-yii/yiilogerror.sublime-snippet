@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+    \Yii::error('${1:textocustom}' ,'${2:categoria}');
+
+]]></content>
+	 <tabTrigger>yiilogerror</tabTrigger>
+    <scope>source.php</scope>
+    <description>Sistema de Log do yii.</description>
+</snippet>

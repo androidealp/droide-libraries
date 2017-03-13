@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+    \app\components\helpers\Tools::Cript(${1:text});
+
+]]></content>
+	 <tabTrigger>yiicript</tabTrigger>
+    <scope>source.php</scope>
+    <description>código no component tools para gerar cript</description>
+</snippet>

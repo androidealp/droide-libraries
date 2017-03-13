@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \yii\helpers\Url::toRoute('${1:rotarelativa}', true);
+
+]]></content>
+	 <tabTrigger>yiiroute</tabTrigger>
+    <scope>source.php</scope>
+    <description>Gera uma url absoluta com base na iformação passada relativa.</description>
+</snippet>

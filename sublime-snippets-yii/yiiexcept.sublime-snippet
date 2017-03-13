@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \yii\web\HttpException(${1:404}, '${2:textcustom}');
+
+]]></content>
+	 <tabTrigger>yiiexcept</tabTrigger>
+    <scope>source.php</scope>
+    <description>Cria uma exeção programada no código.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:Descricao}
+ * @author André Luiz Pereira <andre@next4.com.br>
+ * @param ${2:tipo} ${3:nome} - ${4:desc}
+ * @param ${5:tipo} ${6:nome} - ${7:desc}
+ * @return ${8:tipo} - ${9:desc}
+ */
+
+]]></content>
+	 <tabTrigger>yiidocmetodo</tabTrigger>
+    <scope>source.php</scope>
+    <description>Yii doctype for Method</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    $model = \app\models\${1:Model}::find()->all();
+    return \yii\helpers\ArrayHelper::map($model, '${2:id}', '${3:id}');
+
+]]></content>
+	 <tabTrigger>yiilistmodel</tabTrigger>
+    <scope>source.php</scope>
+    <description>Yii mapeia array para acessar via dropdownlist o checkboxlist</description>
+</snippet>

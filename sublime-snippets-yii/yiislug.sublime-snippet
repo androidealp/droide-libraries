@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \yii\helpers\BaseInflector::slug(${1:'nome'});
+
+]]></content>
+	 <tabTrigger>yiislug</tabTrigger>
+    <scope>source.php</scope>
+    <description>Gera um slug do texto informado.</description>
+</snippet>

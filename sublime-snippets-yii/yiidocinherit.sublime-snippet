@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * @inheritdoc
+ */
+
+]]></content>
+	 <tabTrigger>yiidocinherit</tabTrigger>
+    <scope>source.php</scope>
+    <description>Yii doctype for inheritdoc</description>
+</snippet>

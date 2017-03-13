@@ -1,0 +1,171 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'.source.php':
+  'Doc yii classe':
+    'prefix': 'docyiiclass'
+    'body': '''
+    /**
+     * ${1:Descricao}
+     * @example ${2:url} - ${3:desc}
+     * @author André Luiz Pereira <andre@next4.com.br>
+     */
+    '''
+  'Doc inheritdoc':
+    'prefix': 'docinherit'
+    'body': '''
+    /**
+     * @inheritdoc
+     */
+     '''
+  'Doc yii metodo':
+    'prefix': 'docyiimethod'
+    'body': '''
+    /**
+     * ${1:Descricao}
+     * @author André Luiz Pereira <andre@next4.com.br>
+     * @param ${2:tipo} ${3:nome} - ${4:desc}
+     * @param ${5:tipo} ${6:nome} - ${7:desc}
+     * @return ${8:tipo} - ${9:desc}
+     */
+    '''
+  'Doc Joomla Classe':
+    'prefix': 'docjoomlaclass'
+    'body': '''
+    /**
+     * @package      ${1:nomemethod}.${2:tipoexmoduloplugincomponent}
+     * @subpackage  ${3:nomemethod}
+     *
+     * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+     * @license     GNU General Public License version 2 or later; see LICENSE.txt
+     * @author 		André Luiz Pereira <[<andre@next4.com.br>]>
+     */
+    '''
+  'Doc Joomla metodo':
+    'prefix': 'docjoomlamethodo'
+    'body': '''
+    /**
+     * ${1:Descricao}
+     * @param ${2:tipo} ${3:nome} - ${4:desc}
+     * @param ${5:tipo} ${6:nome} - ${7:desc}
+     * @return ${8:tipo} - ${9:desc}
+     */
+    '''
+  'yii List Model':
+      'prefix': 'yiilistmodel'
+      'body': '''
+        $model = \\\\\app\\\\\models\\\\\Model::find()->all();
+        return \\\\\yii\\\\\helpers\\\\\ArrayHelper::map($model, 'id', 'nome');
+      '''
+  'yii Tools Cript':
+      'prefix': 'yiitoolscript'
+      'body': '''
+      \\\\\app\\\\\components\\\\\helpers\\\\\Tools::Cript($id);
+      '''
+  'yii Tools Decript':
+      'prefix': 'yiitoolsdecript'
+      'body': '''
+      \\\\\app\\\\\components\\\\\helpers\\\\\Tools::Decript($id);
+      '''
+  'yii module adm get params':
+      'prefix': 'yiimoduleparams'
+      'body': '''
+      \\\\\Yii::$app->getModule('_adm')->params['logo']
+      '''
+  'yii identity user':
+      'prefix': 'yiiuser'
+      'body': '''
+      \\\\\Yii::$app->user->identity->column
+      '''
+  'yii format json':
+      'prefix': 'yiiformat'
+      'body': '''
+        \\\\\Yii::$app->response->format = \\\\\yii\\\\\web\\\\\Response::FORMAT_JSON;
+      '''
+  'yii translate':
+      'prefix': 'yiitranslate'
+      'body': '''
+        \\\\\Yii::t('site', 'Sair {user}!');
+      '''
+  'yii logs':
+      'prefix': 'yiilog'
+      'body': '''
+      \\\\\Yii::error('${1:textocustom}' ,'${2:categoria}');
+      '''
+  'yii render ajax':
+      'prefix': 'yiirenderajax'
+      'body': '''
+      return $this->renderAjax('${1:file}',[
+      '${2:key}'=>${3:$var},
+      ]);
+      '''
+  'yii request post':
+      'prefix': 'yiipost'
+      'body': '''
+      \\\\\Yii::$app->request->post()
+      '''
+  'yii request get':
+      'prefix': 'yiiget'
+      'body': '''
+      \\\\\Yii::$app->request->get()
+      '''
+  'yii httpException':
+      'prefix': 'yiiexcept'
+      'body': '''
+      throw new \\\\\yii\\\\\web\\\\\HttpException(404, '${1:textcustom}');
+      '''
+  'yii ErrorException':
+      'prefix': 'yiitryerror'
+      'body': '''
+      try {
+        ${1:"code"}
+      } catch (\\\\\yii\\\\\base\\\\\ErrorException $e) {
+        /// return
+      }
+      '''
+  'yii model error ul':
+        'prefix': 'yiimodelerror'
+        'body': '''
+         $model->HtmlErros()
+        '''
+  'yii ifAjax':
+        'prefix': 'yiiifajax'
+        'body': '''
+         \\\\\Yii::$app->request->isAjax
+        '''
+  'yii request url':
+        'prefix': 'yiiurlbase'
+        'body': '''
+         \\\\\Yii::$app->request->baseUrl
+        '''
+  'yii request url':
+        'prefix': 'yiiurlbase'
+        'body': '''
+         \\\\\Yii::$app->request->baseUrl
+        '''
+  'yii helper url':
+        'prefix': 'yiiurl'
+        'body': '''
+        \\\\\yii\\\\\helpers\\\\\Url::to(['post/index']);
+        '''
+  'yii get alias':
+        'prefix': 'yiialias'
+        'body': '''
+        \\\\\Yii::getAlias('@webroot');
+        '''

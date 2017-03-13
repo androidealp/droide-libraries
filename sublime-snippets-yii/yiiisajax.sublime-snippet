@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \Yii::$app->request->isAjax
+
+]]></content>
+	 <tabTrigger>yiiisajax</tabTrigger>
+    <scope>source.php</scope>
+    <description>Verifica no cabechalho se foi enviado via ajax.</description>
+</snippet>

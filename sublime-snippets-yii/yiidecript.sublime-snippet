@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+    \app\components\helpers\Tools::Decript(${1:text});
+
+]]></content>
+	 <tabTrigger>yiidecript</tabTrigger>
+    <scope>source.php</scope>
+    <description>código no component tools para gerar Decript</description>
+</snippet>

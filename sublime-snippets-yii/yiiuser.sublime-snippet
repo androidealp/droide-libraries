@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+    \Yii::$app->user->identity->column
+
+]]></content>
+	 <tabTrigger>yiiuser</tabTrigger>
+    <scope>source.php</scope>
+    <description>acessa informações de sessao.</description>
+</snippet>

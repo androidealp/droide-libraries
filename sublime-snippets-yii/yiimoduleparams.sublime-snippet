@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+    \Yii::$app->getModule('${1:'_adm'}')->params[${2:'tel'}];
+
+]]></content>
+	 <tabTrigger>yiimoduleparams</tabTrigger>
+    <scope>source.php</scope>
+    <description>pega parametros de um modulo específico</description>
+</snippet>

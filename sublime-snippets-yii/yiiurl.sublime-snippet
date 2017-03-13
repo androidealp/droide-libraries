@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \yii\helpers\Url::to(['${1:'url'}']);
+
+]]></content>
+	 <tabTrigger>yiiurl</tabTrigger>
+    <scope>source.php</scope>
+    <description>inserir uma url no href.</description>
+</snippet>

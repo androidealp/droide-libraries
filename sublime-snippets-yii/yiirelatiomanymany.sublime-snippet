@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+	
+	return $this->hasMany(\app\models\${1:Model}::className(), ['${2:id}' => '${3:id}'])->viaTable('${4:id}', ['${5:id}' => '${6:id}']);    
+    
+
+]]></content>
+	 <tabTrigger>yiirelatiomanymany</tabTrigger>
+    <scope>source.php</scope>
+    <description>Vincula uma relação many to many.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+    
+    try {
+        ${1:"code"}
+      } catch (\yii\base\ErrorException $e) {
+        ${2:"code"}
+      }
+
+]]></content>
+	 <tabTrigger>yiitryerror</tabTrigger>
+    <scope>source.php</scope>
+    <description>Cria um try para o código.</description>
+</snippet>

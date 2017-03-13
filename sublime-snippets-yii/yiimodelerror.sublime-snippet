@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    $model->HtmlErros()
+
+]]></content>
+	 <tabTrigger>yiimodelerror</tabTrigger>
+    <scope>source.php</scope>
+    <description>Exibe no formato html os erros extanciados no modelhelper.</description>
+</snippet>

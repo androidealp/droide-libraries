@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:Descricao}
+ * @example ${2:url} - ${3:desc}
+ * @author André Luiz Pereira <andre@next4.com.br>
+ */
+
+]]></content>
+	 <tabTrigger>yiidocclass</tabTrigger>
+    <scope>source.php</scope>
+    <description>Yii doctype for Class</description>
+</snippet>

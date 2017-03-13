@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \Yii::$app->request->get()
+
+]]></content>
+	 <tabTrigger>yiiget</tabTrigger>
+    <scope>source.php</scope>
+    <description>Retorna dados vindos do get.</description>
+</snippet>

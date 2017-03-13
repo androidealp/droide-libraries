@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \Yii::$app->request->post()
+
+]]></content>
+	 <tabTrigger>yiipost</tabTrigger>
+    <scope>source.php</scope>
+    <description>Retorna dados vindos do post.</description>
+</snippet>

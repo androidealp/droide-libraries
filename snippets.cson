@@ -27,6 +27,13 @@
      * @author André Luiz Pereira <andre@next4.com.br>
      */
     '''
+  'Doc inheritdoc':
+    'prefix': 'docinherit'
+    'body': '''
+    /**
+     * @inheritdoc
+     */
+     '''
   'Doc yii metodo':
     'prefix': 'docyiimethod'
     'body': '''
@@ -60,6 +67,22 @@
      * @return ${8:tipo} - ${9:desc}
      */
     '''
+  'yii List Model':
+      'prefix': 'yiilistmodel'
+      'body': '''
+        $model = \\\\\app\\\\\models\\\\\Model::find()->all();
+        return \\\\\yii\\\\\helpers\\\\\ArrayHelper::map($model, 'id', 'nome');
+      '''
+  'yii Tools Cript':
+      'prefix': 'yiitoolscript'
+      'body': '''
+      \\\\\app\\\\\components\\\\\helpers\\\\\Tools::Cript($id);
+      '''
+  'yii Tools Decript':
+      'prefix': 'yiitoolsdecript'
+      'body': '''
+      \\\\\app\\\\\components\\\\\helpers\\\\\Tools::Decript($id);
+      '''
   'yii module adm get params':
       'prefix': 'yiimoduleparams'
       'body': '''
@@ -120,6 +143,11 @@
         'prefix': 'yiimodelerror'
         'body': '''
          $model->HtmlErros()
+        '''
+  'yii ifAjax':
+        'prefix': 'yiiifajax'
+        'body': '''
+         \\\\\Yii::$app->request->isAjax
         '''
   'yii request url':
         'prefix': 'yiiurlbase'

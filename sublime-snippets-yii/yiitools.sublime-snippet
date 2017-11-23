@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+    \Yii::$app->Tools;
+]]></content>
+	 <tabTrigger>yiitools</tabTrigger>
+    <scope>source.php</scope>
+    <description>Carrega a instancia de Tools que deve ser aplicada na web.</description>
+</snippet>

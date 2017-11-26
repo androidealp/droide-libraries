@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
     
-    \$item = \Yii::$app->db->createCommand()->update('{{%${1:Model}}}', 
+    \$item = \Yii::\$app->db->createCommand()->update('{{%${1:Model}}}', 
             [
             '${2:Col}' => ${3:Val}
             ],

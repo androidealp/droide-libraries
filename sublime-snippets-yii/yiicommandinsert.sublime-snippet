@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+    
+    \$item = \Yii::$app->db->createCommand()->insert('{{%${1:Model}}}', 
+            [
+            '${2:Col}' => ${3:Val}
+            ]
+          )->execute();
+
+]]></content>
+	 <tabTrigger>yiicommandinsert</tabTrigger>
+    <scope>source.php</scope>
+    <description>sql direto para inserir registros.</description>
+</snippet>

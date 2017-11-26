@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
     
-    return $this->hasOne(\app\models\${1:Model}::className(), ['${2:id}' => '${3:id}']);
+    return \$this->hasOne(\app\models\${1:Model}::className(), ['${2:id}' => '${3:id}']);
 
 ]]></content>
 	 <tabTrigger>yiirelationone</tabTrigger>

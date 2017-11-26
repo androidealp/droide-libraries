@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
     
-    \Yii::$app->request->post()
+    \Yii::\$app->request->post()
 
 ]]></content>
 	 <tabTrigger>yiipost</tabTrigger>

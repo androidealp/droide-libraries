@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-    \Yii::$app->Tools;
+    \Yii::\$app->Tools;
 ]]></content>
 	 <tabTrigger>yiitools</tabTrigger>
     <scope>source.php</scope>

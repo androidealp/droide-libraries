@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-    \Yii::$app->user->identity->column
+    \Yii::\$app->user->identity->column
 
 ]]></content>
 	 <tabTrigger>yiiuser</tabTrigger>

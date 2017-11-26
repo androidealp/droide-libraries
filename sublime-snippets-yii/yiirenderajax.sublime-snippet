@@ -1,10 +1,8 @@
 <snippet>
 	<content><![CDATA[
-    
-    return $this->renderAjax('${1:file}',[
+    return \$this->renderAjax('${1:file}',[
       '${2:$model}'=>${3:$model},
       ]);
-
 ]]></content>
 	 <tabTrigger>yiirenderajax</tabTrigger>
     <scope>source.php</scope>

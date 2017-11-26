@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-    \Yii::$app->request->isPjax
+    \Yii::\$app->request->isPjax
 ]]></content>
 	 <tabTrigger>yiirequestpjax</tabTrigger>
     <scope>source.php</scope>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-    \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+    \Yii::\$app->response->format = \yii\web\Response::FORMAT_JSON;
 
 ]]></content>
 	 <tabTrigger>yiiformat</tabTrigger>

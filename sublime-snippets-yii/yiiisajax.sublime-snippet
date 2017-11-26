@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
     
-    \Yii::$app->request->isAjax
+    \Yii::\$app->request->isAjax
 
 ]]></content>
 	 <tabTrigger>yiiisajax</tabTrigger>

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
     
-    \Yii::$app->request->baseUrl
+    \Yii::\$app->request->baseUrl
 
 ]]></content>
 	 <tabTrigger>yiiurlbase</tabTrigger>

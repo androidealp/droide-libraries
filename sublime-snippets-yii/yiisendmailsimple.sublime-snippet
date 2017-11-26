@@ -1,21 +1,21 @@
 <snippet>
 	<content><![CDATA[
     
-    $admurl   = \yii\helpers\Url::toRoute('/_adm', true);
-	   $mail = \Yii::$app->SendMail;
-      //$to = \Yii::$app->params['cadastro_adm_email'];
-      $to = $mail->getListMailTO('email_novos_cads'); // lista de usuários administradores que podem recever este email
-      $from = \Yii::$app->params['sys_mail'];
+    \$admurl   = \yii\helpers\Url::toRoute('/_adm', true);
+	   \$mail = \Yii::\$app->SendMail;
+      //\$to = \Yii::\$app->params['cadastro_adm_email'];
+      \$to = \$mail->getListMailTO('email_novos_cads'); // lista de usuários administradores que podem recever este email
+      \$from = \Yii::\$app->params['sys_mail'];
 
-      $mail = \Yii::$app->SendMail;
-      $mail->sendto       =$to;
-      $mail->from     = $from;
-      $mail->assunto  = 'Novo prestador [erro ocorrido]';
-      $mail->titulo   = "Foi detectado a imposibilidade de envio para o admin do retorno de cadastro deste prestador {$model->email} acesse via adm para verificar os logs e analizar o ocorrido.";
-      $mail->data     = [
-              'Renovar'    =>Html::a('Clique no link para analizar o prestador ',$admurl),
+      \$mail = \Yii::\$app->SendMail;
+      \$mail->sendto       =\$to;
+      \$mail->from     = \$from;
+      \$mail->assunto  = 'Novo prestador [erro ocorrido]';
+      \$mail->titulo   = "Foi detectado a imposibilidade de envio para o admin do retorno de cadastro deste prestador {$model->email} acesse via adm para verificar os logs e analizar o ocorrido.";
+      \$mail->data     = [
+              'Renovar'    =>Html::a('Clique no link para analizar o prestador ',\$admurl),
       ];
-      $envio = $mail->send();
+      \$envio = \$mail->send();
 
 ]]></content>
 	 <tabTrigger>yiisendmailsimple</tabTrigger>

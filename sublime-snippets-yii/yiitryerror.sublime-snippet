@@ -3,7 +3,7 @@
     
     try {
         ${1:"code"}
-      } catch (\yii\base\ErrorException $e) {
+      } catch (\yii\base\ErrorException \$e) {
         ${2:"code"}
       }
 

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
     
-    \yii\web\HttpException(${1:404}, '${2:textcustom}');
+    throw new \yii\web\HttpException(${1:404}, '${2:textcustom}');
 
 ]]></content>
 	 <tabTrigger>yiiexcept</tabTrigger>

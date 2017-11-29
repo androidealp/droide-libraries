@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+    
+    \yii\helpers\Url::toRoute('${1:string}', true);
+
+]]></content>
+	 <tabTrigger>yiiurlabsolute</tabTrigger>
+    <scope>source.php</scope>
+    <description>criar uma url com dados absolutos.</description>
+</snippet>

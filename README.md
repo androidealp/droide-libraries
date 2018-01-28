@@ -21,6 +21,18 @@ MaskImage::MaskImage('path/to/file.jpg');
 snippets.cson
 ````
 
+## Snippet Visual Studio Code
+````
+// acrescentar no C:\Users\usuario\AppData\Roaming\Code\User\snippets
+php.json pelo conteúdo de sniooets-php-VS-Code.json
+````
+
+## Snippet Sublime
+````
+// adicionar na pasta C:\Users\usuario\AppData\Roaming\Sublime Text 3\Packages\User
+sublime-snippets-yii/
+````
+
 ## Ferramentas
 
 ````php

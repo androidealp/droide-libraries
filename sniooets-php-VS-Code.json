@@ -1,0 +1,195 @@
+{
+
+	"Bd inserir": {
+		"prefix": "yiicommandinsert",
+		"body": [
+			"\\Yii::\\$app->db->createCommand()->insert('{{%$1}}', ['$2' => 1])->execute();",
+		],
+		"description": "cria um comando de insert"
+	},
+	"Bd atualizar": {
+		"prefix": "yiicommandupdate",
+		"body": [
+			"$item = \\Yii::\\$app->db->createCommand()->update('{{%$1}}', ['$2' =>1],['$3'=>1])->execute();",
+		],
+		"description": "cria um comando de update"
+	},
+	"PHP doc class": {
+		"prefix": "yiidocclass",
+		"body": [
+			"/**",
+             "* $1",
+             "* @example $2 - $3",
+             "* @author André Luiz Pereira <andre@next4.com.br>",
+             "*/"
+		],
+		"description": "Documentação para class"
+	},
+	"PHP doc metodo": {
+		"prefix": "yiidocmethod",
+		"body": [
+			"/**",
+             "* $1",
+             "* @param $2 $$3 - $4",
+             "* @author André Luiz Pereira <andre@next4.com.br>",
+             "*/"
+		],
+		"description": "Documentação para metodos"
+	},
+	"PHP doc inherit": {
+		"prefix": "yiidocinherit",
+		"body": [
+			"/**",
+             " * @inheritdoc",
+             "*/"
+		],
+		"description": "Documentação padrao do methodo"
+	},
+	"yii except": {
+		"prefix": "yiiexception",
+		"body": [
+			"throw new \\yii\\web\\HttpException($1, '$2');"
+		],
+		"description": "implementa exception no codigo"
+	},
+	"yii format json": {
+		"prefix": "yiiformat",
+		"body": [
+			"\\Yii::\\$app->response->format = \\yii\\web\\Response::${1|FORMAT_JSON,FORMAT_XML,FORMAT_RAW,FORMAT_HTML,FORMAT_JSONP|};"
+		],
+		"description": "Yii format"
+	},
+
+	"yii request get or post": {
+		"prefix": "yiigetpost",
+		"body": [
+			"\\Yii::\\$app->request->${1|get,post|}()"
+		],
+		"description": "Yii get or post request"
+	},
+	"yii get Alias": {
+		"prefix": "yiigetalias",
+		"body": [
+			"\\Yii::getAlias('${1|@app,@web,@webroot,@yii,@vendor,@runtime|}');"
+		],
+		"description": "yii get Alias"
+	},
+	"yii is reguest": {
+		"prefix": "yiiisrequest",
+		"body": [
+			"\\Yii::\\$app->request->${1|isAjax,IsPjax,IsPost,IsGet|}"
+		],
+		"description": "verifica a natureza do request"
+	},
+
+	"yii list model": {
+		"prefix": "yiilistmodel",
+		"body": [
+			"\\$model = \\app\\\\${1|_adm\\models,painel\\models,admsub\\models,models|}\\\\${2:User}::find()->all();",
+			"",
+			"",
+			"return \\yii\\helpers\\ArrayHelper::map('${3:id}', '${4:nome}');"
+		],
+		"description": "Gera uma lista para select"
+	},
+	"yii log error": {
+		"prefix": "yiilogerror",
+		"body": [
+			"\\Yii::error('$1' ,'${2|banco,email,api,acesso|}');"
+		],
+		"description": "log de erro"
+	},
+	"yii query parans": {
+		"prefix": "yiiqueryparams",
+		"body": [
+			"\\Yii::\\$app->request->queryParams"
+		],
+		"description": "retorna dados vindos de request form"
+	},
+	"yii render ajax": {
+		"prefix": "yiirenderajax",
+		"body": [
+			"return \\$this->renderAjax('$1',[",
+			"'$2'=>\\$$3,",
+			"]);"
+		],
+		"description": "render formato ajax no controller"
+	},
+	"yii router absolute": {
+		"prefix": "yiirouterabsol",
+		"body": [
+			"\\yii\\helpers\\Url::toRoute('$1', ${2|true,false|});"
+		],
+		"description": "rota relativa ou absoluta"
+	},
+	"yii slug": {
+		"prefix": "yiislug",
+		"body": [
+			"\\yii\\helpers\\BaseInflector::slug($1);"
+		],
+		"description": "formata o texto para formato url"
+	},
+	"yii user": {
+		"prefix": "yiiuser",
+		"body": [
+			"\\Yii::$app->user->identity->$1"
+		],
+		"description": "manipula usuário logado"
+	},
+	"yii é logado": {
+		"prefix": "yiiisguest",
+		"body": [
+			"\\Yii::\\$app->user->isGuest"
+		],
+		"description": "manipula usuário logado"
+	},
+	"yii logar com a conta": {
+		"prefix": "yiiautologin",
+		"body": [
+			"\\Yii::\\$app->user->switchIdentity(\\$${1:user},0);"
+		],
+		"description": "loga na conta do usuário"
+	},
+	"droide tools": {
+		"prefix": "droidetools",
+		"body": [
+			"\\Yii::\\$app->Tools->${1|Cript('cript'),Decript('decript'),breackName($val),ListpPaises(),ListConteudo(),ListRecurso(),ListaCategorias(),generateUrlByMenu($menuid),calcularIdade('01/01/1986'),listaPerfis(),HtmlProcess(25\\,'textoaqui'),codeItem(),ListaEstados(),generateUrl('alias-teste'\\,'default'\\,'artigo'\\,'urlestaticasetiver'),formatRegister($valor\\,'###.###.###-##'),betweenTimes('dateinit'\\,date('Y-m-d H:i:s')),zendeskChatScript(),setListUrlAjax($array),getListUrlsAjax(),DateDiff('01/01/01'\\,'02/02/02'\\,'%a'),DateBrDiff('01/01/01'\\,'02/02/02'\\,'php:Y-m-dH:i:s'\\,'%a'),DatePlus('+7day'\\,'Y-m-d'),LayoutEmpty('titulo'\\,'conteudo'\\,'linkHtmlA'\\,'resultado_vazio'),GetClick($idartigo}\\,$hitartigo),ImagemProporcionalCrop($pathtoimage\\,$width\\,$height),ImagemProporcional($pathtoimage\\,$width\\,$height),paransImg($pathtoimage),ImagemProporcionalSemFundo($pathtoimage\\,$width\\,$height),resizeCheckPre($pathtoimage),getImg($img\\,$icon)\\,porcentagemDe($de\\,$totalnumero),getStar($numstar),customizaTexto($textotratado\\,$tamanho),hasEffect($arraydeefeitos\\,$posicao\\,getWidget($falseoratributo\\,$falseorkey),countEffPositions($vinculosEffeitos\\,$posicoesarray),loadContent($conteudoartigo),admGuest(),formatDate($date_from\\,'php:Y-m-dH:i:s'),formatDateBD($date\\,'d/m/Y')|}"
+		],
+		"description": "minhas ferramentas"
+	},
+	"droide helper model error": {
+		"prefix": "droidehelpererror",
+		"body": [
+			"\\$${1:model}->${2|HtmlErros,TextErros,HasErros,ArrayErros|}()"
+		],
+		"description": "formatos de erros em modelHelper"
+	},
+
+	"droide widget button": {
+		"prefix": "droidewidgetprocessbutton",
+		"body": [
+			"<?=\\Yii::\\$app->button->widget(['text'=>'${1:Aprovar}','url'=>['url','id'=>$model->id],'action_key'=>'${2:editar}', 'options'=>[",
+			"'class'=>'btn btn-success btn-sm',",
+			"'data-ajaxprocess'=>'form',",
+			"'data-message'=>'Isso afetará os registros. Deseja continuar?',",
+			"'title'=>'Autorizar parceiro Doador',",
+			"]]);?>"
+		],
+		"description": "botão widget para process"
+	},
+	"droide widget button add": {
+		"prefix": "droidewidgetbuttonadd",
+		"body": [
+			"<?=\\Yii::\\$app->button->widget(['type'=>'criar','url'=>['${1:urlrelative}'],'action_key'=>'${2:criar}']);?>",
+		],
+		"description": "botão widget criar padrao"
+	},
+	"droide widget button delete": {
+		"prefix": "droidewidgetbuttondel",
+		"body": [
+			"<?=\\Yii::\\$app->button->widget(['type'=>'deletar','url'=>['${1:urlrelative}'],'action_key'=>'${2:deletar}']); ?>",
+		],
+		"description": "botão widget deletar padrao"
+	}
+
+}

@@ -26,6 +26,9 @@ snippets.cson
 // acrescentar no C:\Users\usuario\AppData\Roaming\Code\User\snippets
 php.json pelo conteúdo de sniooets-php-VS-Code.json
 ````
+*Exemplos visual studio Code*
+
+![Visual studio code](demos/code-pronto.gif)
 
 ## Snippet Sublime
 ````

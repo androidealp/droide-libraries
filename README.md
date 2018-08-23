@@ -15,6 +15,10 @@ MaskImage::MaskImage('path/to/file.jpg');
 
 ````
 
+## Detectar se googlebot/2.1 está funcionando no site
+```
+curl -D - -s -A 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' https://www.meusite.com.br
+```
 ## snippets Aton
 ````
 // inserir no C:\Users\Usuario\.atom
